@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scheduled Events</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Events Form</h1>
+          </div>
+        
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              
+              <div class="form-group">
+                <label for="firstName">Name of the Event</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <br>
+
+              <div class="form-group">
+                <label for="description">Description</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="description"
+                  name="description"
+                />
+              </div> 
+              <br>
+              
+              <div class="form-group">
+                <label for="startTime">Choose a Start Time for the Event:</label>
+                <input type="time" class="form-control" id="startTime" name="startTime">
+              </div>
+              <br>
+              
+
+              <div class="form-group">
+                <label for="endTime">Choose an End Time for the Event:</label>
+                <input type="time" class="form-control" id="endTime" name="endTime">              
+              </div>
+              <br>
+                
+
+              <div class="form-group">
+                <label for="dayWeek">Choose a day:</label>
+                <select name="dayWeek" id="dayWeek">
+                  <option value="No option">no option chosen</option>
+                  <option value="Monday">Monday</option>
+                  <option value="Tuesday">Tuesday</option>
+                  <option value="Wednesday">Wednesday</option>
+                  <option value="Thursday">Thursday</option>
+                  <option value="Friday">Friday</option>
+                  <option value="Saturday">Saturday</option>
+                  <option value="Sunday">Sunday</option>
+                </select>
+               </div>
+                
+               <br>
+              
+           <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>usually event hours are scheduled from 9am to 6pm</small>
+            <small>&copy; omnify project </small>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+    
+  </body>
+</html>
